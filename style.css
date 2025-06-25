@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "微软雅黑", sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #fff);
+  color: #333;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+  color: #00B26A;
+  background: linear-gradient(90deg, #00B26A, #FF9933);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #FF9933;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 153, 51, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background: #FF6600;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(255, 102, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  button {
+    padding: 12px 30px;
+  }
+}
+/* 新增模块通用样式 */
+h2 {
+  color: #00B26A;
+  font-size: 24px;
+  margin: 40px 0 20px;
+  border-left: 5px solid #FF9933;
+  padding-left: 10px;
+}
+
+/* 旅行亮点列表 */
+.highlights {
+  list-style: none;
+  padding-left: 0;
+}
+.highlights li {
+  background: url('https://cdn-icons-png.flaticon.com/512/2991/2991273.png') no-repeat left center;
+  background-size: 20px;
+  padding-left: 30px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* 行程安排 */
+.schedule {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+.day {
+  border-bottom: 1px dashed #ddd;
+  padding: 20px 0;
+}
+.day:last-child {
+  border-bottom: none;
+}
+.day h3 {
+  color: #FF9933;
+  margin-bottom: 10px;
+}
+
+/* 报名步骤 */
+.steps {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.step {
+  width: 200px;
+  text-align: center;
+}
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #FF9933;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
